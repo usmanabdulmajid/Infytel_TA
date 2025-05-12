@@ -103,6 +103,8 @@ class ApiClient {
   Exception _handleError(dynamic error) {
     if (error is TimeoutException) {
       throw const BaseException('Request timed out.');
+    } else if (error is http.ClientException) {
+      throw BaseException('No internet connection');
     } else if (error is SocketException) {
       throw BaseException('${error.toString()} ');
     } else if (error is FormatException) {
