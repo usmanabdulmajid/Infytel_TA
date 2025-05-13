@@ -1,9 +1,11 @@
 val SMARTECH_BASE_SDK_VERSION: String by project
+val SMARTECH_PUSH_SDK_VERSION: String by project
 plugins {
     id("com.android.application")
     id("kotlin-android")
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -51,5 +53,8 @@ dependencies {
     implementation("androidx.work:work-runtime-ktx:2.7.0")
     api("com.netcore.android:smartech-sdk:${SMARTECH_BASE_SDK_VERSION}")
     implementation("androidx.multidex:multidex:2.0.1")
+    api("com.netcore.android:smartech-push:${SMARTECH_PUSH_SDK_VERSION}")
+    implementation(platform("com.google.firebase:firebase-bom:33.13.0"))
+    implementation("com.google.firebase:firebase-messaging")
 }
 

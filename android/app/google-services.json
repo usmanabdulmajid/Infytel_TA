@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "222207134220",
+    "project_id": "infytel-test",
+    "storage_bucket": "infytel-test.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222207134220:android:59ed847b8c62ae39d77c29",
+        "android_client_info": {
+          "package_name": "com.example.infytel_test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwAQp4kvIbbgJTWz1M9XYijs9hkbVnJ2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

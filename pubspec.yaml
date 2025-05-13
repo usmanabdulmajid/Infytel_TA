@@ -36,7 +36,9 @@ dependencies:
   get_it: ^8.0.3
   http: ^1.4.0
   logger: ^2.5.0
+  permission_handler: ^12.0.0+1
   smartech_base: ^3.5.0
+  smartech_push: ^3.5.3
 
 dev_dependencies:
   flutter_lints: ^5.0.0
