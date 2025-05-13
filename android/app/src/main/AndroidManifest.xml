@@ -2,8 +2,11 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:label="infytel_test"
-        android:name="${applicationName}"
+        android:name=".MyApplication"
         android:icon="@mipmap/ic_launcher">
+        <meta-data
+            android:name="SMT_APP_ID"
+            android:value="YOUR_SMARTECH_APP_ID_HERE" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

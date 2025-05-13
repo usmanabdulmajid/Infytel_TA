@@ -1,3 +1,4 @@
+val SMARTECH_BASE_SDK_VERSION: String by project
 plugins {
     id("com.android.application")
     id("kotlin-android")
@@ -8,7 +9,7 @@ plugins {
 android {
     namespace = "com.example.infytel_test"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "27.2.12479018"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -28,6 +29,7 @@ android {
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+        multiDexEnabled = true
     }
 
     buildTypes {
@@ -42,3 +44,12 @@ android {
 flutter {
     source = "../.."
 }
+
+dependencies {
+    implementation("com.netcore.android:smartech-sdk:3.5.8")
+    implementation("androidx.work:work-runtime:2.7.0")
+    implementation("androidx.work:work-runtime-ktx:2.7.0")
+    api("com.netcore.android:smartech-sdk:${SMARTECH_BASE_SDK_VERSION}")
+    implementation("androidx.multidex:multidex:2.0.1")
+}
+

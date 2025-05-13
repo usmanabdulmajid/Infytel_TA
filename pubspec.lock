@@ -200,6 +200,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  smartech_base:
+    dependency: "direct main"
+    description:
+      name: smartech_base
+      sha256: "8270aa48f7b0c878e9813125f2785ad8dd56a3d7429a066e250b429bdf9b01e4"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.5.1"
   source_span:
     dependency: transitive
     description:
